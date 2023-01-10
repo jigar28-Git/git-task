@@ -1,0 +1,447 @@
+PS C:\Users\Samarth\Desktop\simform-git> git init
+Initialized empty Git repository in C:/Users/Samarth/Desktop/simform-git/.git/
+PS C:\Users\Samarth\Desktop\simform-git> git config --global user.name jigar
+PS C:\Users\Samarth\Desktop\simform-git> git config --global user.name      
+jigar
+PS C:\Users\Samarth\Desktop\simform-git> git config --global user.email jigar.k@simformsolutions.com
+PS C:\Users\Samarth\Desktop\simform-git> git config --global user.email
+jigar.k@simformsolutions.com
+PS C:\Users\Samarth\Desktop\simform-git> git add -A
+PS C:\Users\Samarth\Desktop\simform-git> git commit -m "push in rapo"
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 simform-git.txt
+PS C:\Users\Samarth\Desktop\simform-git> git push -f origin master
+The authenticity of host 'github.com (20.207.73.82)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+fatal: Could not read from remote repository.
+
+and the repository exists.
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$ git remote
+origin
+originn
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$ git config --global user..name
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$ git config --global user.name
+jigar
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$ git config --global user.email
+jigar.k@simformsolutions.com
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$ git add .
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$ git commit -m "push in rapo"
+On branch master
+nothing to commit, working tree clean
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$ git remote add new-r git@github.com:jigar28-Git/git-task.git
+bash: $'\302\226\302\226git': command not found
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$ git remote add new-r git@github.com:jigar28-Git/git-task.git
+bash: $'\302\226\302\226git': command not found
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$ git remote add new git@github.com:jigar28-Git/git-task.git
+bash: $'\302\226\302\226git': command not found
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$ git remote add origin git@github.com:jigar28-Git/git-task.git
+error: remote origin already exists.
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$ git remote add firstremote git@github.com:jigar28-Git/git-task.git
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$ git push -f firstremote master
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$ git remote set-url try https://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@github.com/jigar28-Git/git-task.git
+error: No such remote 'try'
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$ git remote set-url origin https://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@github.com/jigar28-Git/git-task.git
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$ git push -f origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 219 bytes | 109.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/jigar28-Git/git-task.git
+ * [new branch]      master -> master
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$ git checkout -b b1
+Switched to a new branch 'b1'
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ git status
+On branch b1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   simform-git.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ git add .
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ git commit -m "pull request and mearg"
+[b1 89c268b] pull request and mearg
+ 1 file changed, 1 insertion(+)
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ git checkout master
+Switched to branch 'master'
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$ git merge b1
+Updating f54ddf1..89c268b
+Fast-forward
+ simform-git.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$ git checkout b1
+Switched to branch 'b1'
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ git push -f origin b1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 269 bytes | 134.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'b1' on GitHub by visiting:
+remote:      https://github.com/jigar28-Git/git-task/pull/new/b1
+remote:
+To https://github.com/jigar28-Git/git-task.git
+ * [new branch]      b1 -> b1
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ git checkout master
+Switched to branch 'master'
+M       simform-git.txt
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$ git rebase b1
+error: cannot rebase: You have unstaged changes.
+error: Please commit or stash them.
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$ git checkout b1
+Switched to branch 'b1'
+M       simform-git.txt
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ git add .
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ git commit -m "second task"
+[b1 7b3353e] second task
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ git checkout master
+Switched to branch 'master'
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$ git rebase b1
+Successfully rebased and updated refs/heads/master.
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$ git push -f origin master
+fatal: unable to access 'https://github.com/jigar28-Git/git-task.git/': Could not resolve host: github.com
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$ git checkout b1
+Switched to branch 'b1'
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ git push -f origin b1
+fatal: unable to access 'https://github.com/jigar28-Git/git-task.git/': Could not resolve host: github.com
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ git push -u origin b1
+fatal: unable to access 'https://github.com/jigar28-Git/git-task.git/': Could not resolve host: github.com
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ git remote -v
+firstremote     git@github.com:jigar28-Git/git-task.git (fetch)
+firstremote     git@github.com:jigar28-Git/git-task.git (push)
+origin  https://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@github.com/jigar28-Git/git-task.git (fetch)
+origin  https://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@github.com/jigar28-Git/git-task.git (push)
+originn git@github.com:jigar28-Git/git-task.git (fetch)
+originn git@github.com:jigar28-Git/git-task.git (push)
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ git push -u originn b1
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ git push -f origin b1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 268 bytes | 134.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/jigar28-Git/git-task.git
+   89c268b..7b3353e  b1 -> b1
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ q
+\bash: q: command not found
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ git log
+commit 7b3353eea486e9b1bb4418c9fd2cf1a6134a792d (HEAD -> b1, origin/b1, master)
+Author: jigar <jigar.k@simformsolutions.com>
+Date:   Tue Jan 10 21:38:44 2023 +0530
+
+    second task
+
+commit 89c268b9c58c9d72e7af79b525e22de590a8b126
+Author: jigar <jigar.k@simformsolutions.com>
+Date:   Tue Jan 10 21:32:30 2023 +0530
+
+    pull request and mearg
+
+commit f54ddf13d82537d95b0af79d248dfc7123856501 (origin/master)
+Author: jigar <jigar.k@simformsolutions.com>
+Date:   Tue Jan 10 21:00:20 2023 +0530
+
+    push in rapo
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ git rebase -i HEAD~2
+hint: Waiting for your editor to close the file...       1 [sig] bash 1435! sigpacket::process: Suppressing signal 18 to win32 process (pid 10488)
+Stopped at 89c268b...  pull request and mearg
+You can amend the commit now, with
+
+  git commit --amend
+
+Once you are satisfied with your changes, run
+
+  git rebase --continue
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1|REBASE 1/2)
+$ git commit --amend
+[detached HEAD f0e81e5] pull request and mearg---
+ Date: Tue Jan 10 21:32:30 2023 +0530
+ 1 file changed, 1 insertion(+)
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1|REBASE 1/2)
+$ git rebase --continue
+Successfully rebased and updated refs/heads/b1.
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ git log
+commit 5a366befe1d273f931814b3009e11b5fb4aae237 (HEAD -> b1)
+Author: jigar <jigar.k@simformsolutions.com>
+Date:   Tue Jan 10 21:38:44 2023 +0530
+
+    second task
+
+commit f0e81e5449467acf3fe09623a0256d348c03050d
+Author: jigar <jigar.k@simformsolutions.com>
+Date:   Tue Jan 10 21:32:30 2023 +0530
+
+    pull request and mearg---
+
+commit f54ddf13d82537d95b0af79d248dfc7123856501 (origin/master)
+Author: jigar <jigar.k@simformsolutions.com>
+Date:   Tue Jan 10 21:00:20 2023 +0530
+
+    push in rapo
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ git push -f origin b1
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (6/6), 517 bytes | 172.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/jigar28-Git/git-task.git
+ + 7b3353e...5a366be b1 -> b1 (forced update)
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ git add .
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ git commit -m "third task completed"
+[b1 192201a] third task completed
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ git push -f origin b1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 280 bytes | 93.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/jigar28-Git/git-task.git
+   5a366be..192201a  b1 -> b1
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ git checkout master
+Already on 'master'
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$ git merge b1
+Auto-merging simform-git.txt
+CONFLICT (content): Merge conflict in simform-git.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master|MERGING)
+$ git rebase b1
+simform-git.txt: needs merge
+error: cannot rebase: You have unstaged changes.
+error: additionally, your index contains uncommitted changes.
+error: Please commit or stash them.
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master|MERGING)
+$ git checkout
+error: you need to resolve your current index first
+simform-git.txt: needs merge
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master|MERGING)
+$ git add .
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master|MERGING)
+$ git commit -m "master third task"
+[master 9950748] master third task
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$ git add .
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$ git commit -m "master third task"
+[master 51849bc] master third task
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$ git checkout b1
+Switched to branch 'b1'
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ git add .
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ git commit -m "b1 fourth task"
+[b1 2c32e70] b1 fourth task
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ git push -f origin b1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 285 bytes | 142.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/jigar28-Git/git-task.git
+   192201a..2c32e70  b1 -> b1
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ git log
+commit 2c32e70684853efc4315fec4c095fd5e5f57b9a8 (HEAD -> b1, origin/b1)
+Author: jigar <jigar.k@simformsolutions.com>
+Date:   Tue Jan 10 22:02:17 2023 +0530
+
+    b1 fourth task
+
+commit 192201a557c8fb771a00708ca940638926b5410c
+Author: jigar <jigar.k@simformsolutions.com>
+Date:   Tue Jan 10 21:54:38 2023 +0530
+
+    third task completed
+
+commit 5a366befe1d273f931814b3009e11b5fb4aae237
+Author: jigar <jigar.k@simformsolutions.com>
+Date:   Tue Jan 10 21:38:44 2023 +0530
+
+    second task
+
+commit f0e81e5449467acf3fe09623a0256d348c03050d
+Author: jigar <jigar.k@simformsolutions.com>
+Date:   Tue Jan 10 21:32:30 2023 +0530
+
+    pull request and mearg---
+
+commit f54ddf13d82537d95b0af79d248dfc7123856501 (origin/master)
+Author: jigar <jigar.k@simformsolutions.com>
+Date:   Tue Jan 10 21:00:20 2023 +0530
+
+    push in rapo
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ git checkout master
+Switched to branch 'master'
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$ git cherry-pick 2c32e70684853efc4315fec4c095fd5e5f57b9a8
+[master e218355] b1 fourth task
+ Date: Tue Jan 10 22:02:17 2023 +0530
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$ git checkoutb
+git: 'checkoutb' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$ git checkout b1
+Switched to branch 'b1'
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ git reset HEAD~1
+Unstaged changes after reset:
+M       simform-git.txt
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ git checkout simform-git.txt
+Updated 1 path from the index
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ git push -f origin b1
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/jigar28-Git/git-task.git
+ + 2c32e70...192201a b1 -> b1 (forced update)
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (b1)
+$ git checkout master
+Switched to branch 'master'
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$ git push -f origin master
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (13/13), 1.16 KiB | 297.00 KiB/s, done.
+Total 13 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/jigar28-Git/git-task.git
+ + db11872...e218355 master -> master (forced update)
+
+Samarth@LAPTOP-TE7ME5C0 MINGW64 ~/Desktop/simform-git (master)
+$
