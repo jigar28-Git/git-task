@@ -120,3 +120,27 @@ git reset --hard HEAD~N
 ```
 git reset --hard <sha1-commit-hash>
 ```
+# To Fetch remotely created folders in to main branch :
+- ***commands :***
+```
+git fetch --all
+```
+> to fetch the all folders
+```
+git checkout main-copy
+```
+> This will make copy of the main branch. 
+```
+$ git checkout - 
+```
+> To go to the main branch or previous branch.
+```
+$ git reset --hard origin/main  
+```
+> This will push the all folders that you are created remotlly.
+
+### Result Demo :
+
+|   Before    |   After    |
+| :-----------: | :-----------: |
+|![Screenshot from 2023-02-03 11-56-52](https://user-images.githubusercontent.com/119313004/216529621-8fd0b6a2-cedc-4214-ac53-545145b4d7dc.png) | ![Screenshot from 2023-02-03 11-56-44](https://user-images.githubusercontent.com/119313004/216529636-6e807ff4-dd48-4a02-aa92-f2221bb00488.png) |
